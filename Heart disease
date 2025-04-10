@@ -1,0 +1,19 @@
+RandomizedSearchCV(cv=5, estimator=RandomForestClassifier(), n_jobs=-1,
+                   param_distributions={'bootstrap': [True, False],
+                                        'max_depth': [2, 8, None],
+                                        'max_features': [0.2, 0.6, 1.0],
+                                        'max_samples': [0.5, 0.75, 1.0],
+                                        'min_samples_leaf': [1, 2],
+                                        'min_samples_split': [2, 5],
+                                        'n_estimators': [20, 60, 100, 120]},
+                   verbose=2)
+rf_grid.best_params_
+{'n_estimators': 120,
+ 'min_samples_split': 2,
+ 'min_samples_leaf': 2,
+ 'max_samples': 0.75,
+ 'max_features': 0.2,
+ 'max_depth': None,
+ 'bootstrap': True}
+rf_grid.best_score_
+0.8178571428571428
